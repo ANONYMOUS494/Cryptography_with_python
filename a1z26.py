@@ -1,12 +1,12 @@
-import os                                                           #only used to clear command prompt
-def A1Z26_encrypt(cistring):                                        #encrypt string by converting each letter to a number
-    string=" "                                                      #place holder variable
-    cistring = cistring.lower()                                     # Format to lower case
-    cistring = " ".join(cistring.split())                           #remove spaces from string
-    for x in range(0,len(cistring)):                                #loop through each character of a string
+import os                                                           
+def A1Z26_encrypt(cistring):                                    
+    string=" "                                                      
+    cistring = cistring.lower()                                     
+    cistring = " ".join(cistring.split())                           
+    for x in range(0,len(cistring)):                                
         char=ord(cistring[x])-96
-        if char > 0 and char <=26 :string  +=str(char) +  "  "      #store value in string variable
-    return(string)                                                  #return cipher string
+        if char > 0 and char <=26 :string  +=str(char) +  "  "      
+    return(string)                                                  
 
 def A1Z26_decrypt(cistring):
     string=" "
